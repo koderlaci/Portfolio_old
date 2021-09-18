@@ -271,3 +271,23 @@ li{
     width: 4%;
     visibility: hidden;
 }
+
+.icon-windows:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.tray-cmd:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.tray-word:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.tray-pp:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
