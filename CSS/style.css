@@ -229,6 +229,16 @@ li{
     width: 10%;
 }
 
+#tray{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(58, 58, 51);
+    position: fixed;
+    bottom: 0;
+}
+
 .icon-windows{
     background-image: url("../Pictures/icon-windows.png");
     background-position: center;
