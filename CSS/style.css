@@ -124,3 +124,20 @@
     left: 5%;
     top: 75%;
 }
+
+#square{
+    display: inline;
+}
+
+ul{
+    list-style-type:none;
+}
+
+li:hover{
+    background-color: rgb(34, 95, 34);
+    cursor: pointer;
+}
+
+li{
+    width: 50%;
+}
