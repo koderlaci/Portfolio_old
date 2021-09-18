@@ -45,3 +45,53 @@
     color: white;
     font-size: 1vw;
 }
+
+.icons-cmd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 15%;
+}
+
+.icon-cmd-sendTray{
+    background-image: url("../Pictures/icon-sendTray.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-cmd-minimize{
+    background-image: url("../Pictures/icon-minimize.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-cmd-exit{
+    background-image: url("../Pictures/icon-exit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-cmd-sendTray:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-cmd-minimize:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-cmd-exit:hover{
+    background-color: red;
+    cursor: pointer;
+}
