@@ -27,3 +27,21 @@
     width: 50%;
     height: 60%;
 }
+
+#frame-cmd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(58, 58, 51);
+    width: 100%;
+    height: 5vh;
+    overflow: hidden;
+}
+
+.cmdName{
+    position: relative;
+    left: 2%;
+    color: white;
+    font-size: 1vw;
+}
