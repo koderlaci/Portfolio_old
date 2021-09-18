@@ -220,3 +220,54 @@ li{
     background-color: rgb(175, 171, 171);
     cursor: pointer;
 }
+
+.icons-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 10%;
+}
+
+.icon-windows{
+    background-image: url("../Pictures/icon-windows.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 50%;
+    height: 100%;
+    width: 3%;
+}
+
+.tray-cmd{
+    background-image: url("../Pictures/tray-cmd.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 50%;
+    height: 100%;
+    width: 4%;
+    background-color: rgb(175, 171, 171);
+}
+
+.tray-word{
+    background-image: url("../Pictures/tray-word.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 50%;
+    height: 100%;
+    width: 4%;
+    visibility: hidden;
+}
+
+.tray-pp{
+    background-image: url("../Pictures/tray-pp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 50%;
+    height: 100%;
+    width: 4%;
+    visibility: hidden;
+}
