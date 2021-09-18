@@ -104,3 +104,23 @@
     flex-direction: column;
     overflow: hidden;
 }
+
+#text{
+    color: rgb(43, 128, 43);
+    font-size: 2vw;
+    font-family: 'Consolas';
+    position: relative;
+    left: 5%;
+    top: 10%;
+    height: 10%;
+}
+
+#email{
+    color: rgb(43, 128, 43);
+    font-size: 2vw;
+    font-family: 'Consolas';
+    display: flex;
+    position: relative;
+    left: 5%;
+    top: 75%;
+}
