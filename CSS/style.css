@@ -410,3 +410,45 @@ li{
 .pp-item-5{
     background-image: url("../Pictures/pp-item pp-item-5.jpg");
 }
+
+.icon-pp-sendTray{
+    background-image: url("../Pictures/icon-sendTray.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-pp-minimize{
+    background-image: url("../Pictures/icon-minimize.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-pp-exit{
+    background-image: url("../Pictures/icon-exit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-pp-sendTray:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-pp-minimize:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-pp-exit:hover{
+    background-color: red;
+    cursor: pointer;
+}
