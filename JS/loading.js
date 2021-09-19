@@ -118,3 +118,19 @@ function SetMenu(){
         ListSelect();
     }
 }
+
+function ListSelect(){
+    document.querySelectorAll("li")[0].addEventListener("click", ()=> {
+        document.getElementById("introduction").style.visibility = "visible";
+        document.querySelector(".tray-word").style.visibility = "visible";
+        document.querySelector(".tray-word").style.display = "block";
+    });
+
+    document.querySelectorAll("li")[1].addEventListener("click", ()=> {
+        document.getElementById("experiences").style.visibility = "visible";
+        document.querySelector(".tray-pp").style.visibility = "visible";
+        document.querySelector(".tray-pp").style.display = "block";
+    });
+    //document.querySelectorAll("li")[2].addEventListener("click", ()=> { document.getElementById("ownProjects").style.visibility = "visible";});
+    //document.querySelectorAll("li")[3].addEventListener("click", ()=> { document.getElementById("contact").style.visibility = "visible";});
+}
