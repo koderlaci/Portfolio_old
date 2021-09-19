@@ -390,3 +390,23 @@ li{
 .pp-item:hover{
     border: 1px solid black !important;
 }
+
+.pp-item-1{
+    background-image: url("../Pictures/pp-item pp-item-1.jpg");
+}
+
+.pp-item-2{
+    background-image: url("../Pictures/pp-item pp-item-2.jpg");
+}
+
+.pp-item-3{
+    background-image: url("../Pictures/pp-item pp-item-3.jpg");
+}
+
+.pp-item-4{
+    background-image: url("../Pictures/pp-item pp-item-4.jpg");
+}
+
+.pp-item-5{
+    background-image: url("../Pictures/pp-item pp-item-5.jpg");
+}
