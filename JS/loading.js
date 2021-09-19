@@ -53,3 +53,68 @@ function TextLoader(){
         Loading();
     }
 }
+
+function Loading(){
+    setTimeout(Dot, 500);
+    setTimeout(Dot, 1000);
+    setTimeout(Dot, 1500);
+    setTimeout(Dot, 2000);
+    setTimeout(Dot, 2500);
+    setTimeout(Dot, 3000);
+    setTimeout(Hide, 3500);
+    setTimeout(CreateList, 4000);
+    setTimeout(InitLoader, 4500);
+}
+
+function InitLoader(){
+    MenuTextInterval = setInterval(Loader, 120);
+}
+
+function InitMenu(){
+    MenuLoaderInterval = setInterval(SetMenu, 120);
+}
+
+function Loader(){
+    if(j < ListText.length)
+    {
+        document.getElementById("list").innerHTML += ListText[j];
+        j++;
+    }
+    else
+    {
+        clearInterval(MenuTextInterval);
+        j = 0;
+        InitMenu();
+    }
+}
+
+function SetMenu(){
+    if(temp < k && k < Menus.length)
+    {
+        listItem = document.createElement("li");
+        document.getElementById("list").appendChild(listItem);
+        temp++;
+    }
+    if(j < Menus[k].length)
+    {
+        if(k == 0 && j == 0)
+        {
+            document.getElementById("list").appendChild(listItem);
+        }
+        
+        listItem.innerHTML += Menus[k][j];
+        j++;
+    }
+    if(j == Menus[k].length)
+    {
+        temp = k;
+        k++;
+        j = 0;
+    }
+    if(k == Menus.length)
+    {
+        clearInterval(MenuLoaderInterval);
+        j = 0;
+        ListSelect();
+    }
+}
