@@ -271,6 +271,37 @@ li{
     cursor: pointer;
 }
 
+.icon-save{
+    background-image: url("../Pictures/icon-save.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-redo{
+    background-image: url("../Pictures/icon-redo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-save:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icons-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 10%;
+}
+
 #tray{
     display: flex;
     align-items: center;
