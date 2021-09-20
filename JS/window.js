@@ -137,3 +137,29 @@ ppTray.addEventListener("click", ()=>{
         document.querySelector(".tray-pp").style.backgroundColor = "rgb(175, 171, 171)";
     }
 });
+
+let tempElement = document.createElement("div");
+function Outline(element){
+    if(tempElement != element)
+    {
+        tempElement.style.border = "1px solid rgb(179, 169, 169)";
+    }
+    tempElement = element;
+    element.style.border = "3px solid #D04423";
+    SwitchImage(element);
+}
+
+function SwitchImage(element){
+    document.querySelector(".box-text-pp").style.backgroundImage = 'url("Pictures/'+element.className+'.jpg")';
+}
+
+let ppitem1 = document.querySelector(".pp-item-1");
+ppitem1.addEventListener("click", ()=>{ Outline(ppitem1)});
+let ppitem2 = document.querySelector(".pp-item-2");
+ppitem2.addEventListener("click", ()=>{ Outline(ppitem2)});
+let ppitem3 = document.querySelector(".pp-item-3");
+ppitem3.addEventListener("click", ()=>{ Outline(ppitem3)});
+let ppitem4 = document.querySelector(".pp-item-4");
+ppitem4.addEventListener("click", ()=>{ Outline(ppitem4)});
+let ppitem5 = document.querySelector(".pp-item-5");
+ppitem5.addEventListener("click", ()=>{ Outline(ppitem5)});
