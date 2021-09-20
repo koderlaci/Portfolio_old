@@ -229,6 +229,48 @@ li{
     width: 10%;
 }
 
+.icon-sendTray{
+    background-image: url("../Pictures/icon-sendTray.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-minimize{
+    background-image: url("../Pictures/icon-minimize.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-exit{
+    background-image: url("../Pictures/icon-exit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-sendTray:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-minimize:hover{
+    background-color: rgb(175, 171, 171);
+    cursor: pointer;
+}
+
+.icon-exit:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
 #tray{
     display: flex;
     align-items: center;
