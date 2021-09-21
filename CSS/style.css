@@ -19,7 +19,7 @@
 
 #applications{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     position: absolute;
@@ -27,7 +27,35 @@
     right: 0;
     width: 5%;
     height: 95vh;
-    background-color: aqua;
+}
+
+.app-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.app-1{
+    background-image: url("../Pictures/tray-cmd.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 80%;
+    height: 10%;
+    width: 100%;
+}
+
+.app-1-name{
+    display: flex;
+    justify-content: center;
+    height: 4%;
+    width: 100%;
+    color: white;
 }
 
 #cmd{
