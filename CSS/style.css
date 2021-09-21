@@ -152,7 +152,7 @@ li{
     height: 80%;
     top: 10%;
     box-shadow: -1px 0 rgb(77, 73, 73), 0 1px rgb(77, 73, 73), 1px 0 rgb(77, 73, 73), 0 -1px rgb(77, 73, 73);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .frame-word{
@@ -233,7 +233,7 @@ li{
     background-image: url("../Pictures/icon-sendTray.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
@@ -242,7 +242,7 @@ li{
     background-image: url("../Pictures/icon-minimize.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
@@ -251,7 +251,7 @@ li{
     background-image: url("../Pictures/icon-exit.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
@@ -490,7 +490,7 @@ li{
     background-image: url("../Pictures/icon-sendTray.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
@@ -499,7 +499,7 @@ li{
     background-image: url("../Pictures/icon-minimize.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
@@ -508,7 +508,7 @@ li{
     background-image: url("../Pictures/icon-exit.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     height: 100%;
     width: 100%;
 }
