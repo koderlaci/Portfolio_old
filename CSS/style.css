@@ -17,19 +17,6 @@
     height: 100vh;
 }
 
-#applications{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5%;
-    height: 95vh;
-    background-color: aqua;
-}
-
 #cmd{
     display: flex;
     justify-content: center;
