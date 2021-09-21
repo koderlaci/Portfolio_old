@@ -342,6 +342,7 @@ li{
     height: 100%;
     width: 4%;
     visibility: hidden;
+    background-color: rgb(175, 171, 171);
 }
 
 .tray-pp{
@@ -353,6 +354,7 @@ li{
     height: 100%;
     width: 4%;
     visibility: hidden;
+    background-color: rgb(175, 171, 171);
 }
 
 .icon-windows:hover{
