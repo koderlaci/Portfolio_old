@@ -168,6 +168,10 @@ li{
     border: 1px solid black;
 }
 
+.document-name{
+    font-size: 1vw;
+}
+
 .screen-word{
     display: flex;
     justify-content: space-between;
@@ -188,6 +192,16 @@ li{
     width: 70%;
     margin-top: 1%;
     border: 1px solid rgb(179, 169, 169);
+    overflow: hidden;
+}
+
+.introduction-text{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1vw;
 }
 
 .icons-1{
