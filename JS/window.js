@@ -104,7 +104,7 @@ ppExit.addEventListener("click", ()=> {
 });
 
 ppMinimize.addEventListener("click", ()=> {
-    if(pp.style.height == "100%")
+    if(pp.style.height == "95%")
     {
         pp.style.left = "10%";
         pp.style.top = "10%";
@@ -115,7 +115,7 @@ ppMinimize.addEventListener("click", ()=> {
     {
         pp.style.left = 0;
         pp.style.top = 0;
-        pp.style.height = "100%";
+        pp.style.height = "95%";
         pp.style.width = "100%";
     }  
 });
