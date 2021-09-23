@@ -53,7 +53,7 @@
     height: 100%;
     width: 15%;
 }
-
+/*
 .icon-cmd-sendTray{
     background-image: url("../Pictures/icon-sendTray.png");
     background-position: center;
@@ -80,7 +80,7 @@
     height: 100%;
     width: 100%;
 }
-
+*/
 .icon-cmd-sendTray:hover{
     background-color: rgb(175, 171, 171);
     cursor: pointer;
@@ -427,7 +427,7 @@ li{
     height: 80%;
     top: 10%;
     box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
-    visibility: visible;
+    visibility: hidden;
 }
 
 .frame-pp{
@@ -525,7 +525,7 @@ li{
 .pp-item-5{
     background-image: url("../Pictures/pp-item pp-item-5.jpg");
 }
-
+/*
 .icon-pp-sendTray{
     background-image: url("../Pictures/icon-sendTray.png");
     background-position: center;
@@ -552,7 +552,7 @@ li{
     height: 100%;
     width: 100%;
 }
-
+*/
 .icon-pp-sendTray:hover{
     background-color: rgb(175, 171, 171);
     cursor: pointer;

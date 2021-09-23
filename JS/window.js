@@ -1,19 +1,19 @@
 let cmd = document.querySelector("#cmd");
-let cmdExit = document.querySelector(".icon-cmd-exit");
-let cmdMinimize = document.querySelector(".icon-cmd-minimize");
-let cmdSendTray = document.querySelector(".icon-cmd-sendTray");
+let cmdExit = document.querySelector(".icon-exit.icon-cmd");
+let cmdMinimize = document.querySelector(".icon-minimize.icon-cmd");
+let cmdSendTray = document.querySelector(".icon-sendTray.icon-cmd");
 let cmdTray = document.querySelector(".tray-cmd");
 
 let intro = document.querySelector("#introduction");
-let wordExit = document.querySelector(".icon-exit");
-let wordMinimize = document.querySelector(".icon-minimize");
-let wordSendTray = document.querySelector(".icon-sendTray");
+let wordExit = document.querySelector(".icon-exit.icon-word");
+let wordMinimize = document.querySelector(".icon-minimize.icon-word");
+let wordSendTray = document.querySelector(".icon-sendTray.icon-word");
 let wordTray = document.querySelector(".tray-word");
 
 let pp = document.querySelector("#experiences");
-let ppExit = document.querySelector(".icon-pp-exit");
-let ppMinimize = document.querySelector(".icon-pp-minimize");
-let ppSendTray = document.querySelector(".icon-pp-sendTray");
+let ppExit = document.querySelector(".icon-exit.icon-pp");
+let ppMinimize = document.querySelector(".icon-minimize.icon-pp");
+let ppSendTray = document.querySelector(".icon-sendTray.icon-pp");
 let ppTray = document.querySelector(".tray-pp");
 
 cmdExit.addEventListener("click", ()=> {
