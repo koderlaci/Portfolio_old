@@ -3,7 +3,7 @@ let k = 0;
 let temp = 0;
 let loadingtext = "Betöltés folyamatban";
 let loadingtextname = "Kóder László";
-let Menus = ["Bemutatkozás", "Tapasztalatok", "Saját projektek", "Kapcsolat"];
+let Menus = ["Bemutatkozás", "Ismereteim", "Saját projektek", "Kapcsolat"];
 let ListText = "Válassz menüpontot:";
 let isNameWritten = false;
 let listItem;
