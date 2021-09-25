@@ -132,5 +132,10 @@ function ListSelect(){
         document.querySelector(".tray-pp").style.display = "block";
     });
     document.querySelectorAll("li")[2].addEventListener("click", ()=> { window.open("https://github.com/koderlaci?tab=repositories", '_blank').focus();});
-    //document.querySelectorAll("li")[3].addEventListener("click", ()=> { document.getElementById("contact").style.visibility = "visible";});
+
+    document.querySelectorAll("li")[3].addEventListener("click", ()=> {
+        document.getElementById("contact").style.visibility = "visible";
+        //document.querySelector(".tray-txt").style.visibility = "visible";
+        //document.querySelector(".tray-txt").style.display = "block";
+    });
 }

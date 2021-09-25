@@ -440,3 +440,53 @@ li{
 .pp-item-5{
     background-image: url("../Pictures/pp-item pp-item-5.jpg");
 }
+
+/* Kapcsolat */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 10%;
+    box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
+    visibility: visible;
+}
+
+.frame-txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.screen-txt{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 220, 220);
+    width: 100%;
+    height: 100%;
+}
+
+.box-text-txt{
+    background-color: white;
+    width: 100%;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.contact-text{
+    text-align: justify;
+    font-family: 'Consolas';
+    margin: 1%;
+    font-size: 1vw;
+}
