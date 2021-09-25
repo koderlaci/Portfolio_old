@@ -395,7 +395,6 @@ li{
     width: 90%;
     margin: 2%;
     margin-right: 7%;
-    /*border: 1px solid rgb(179, 169, 169);*/
     background-image: url("../Pictures/pp-item pp-item-1.jpg");
     background-size: contain;
     background-position: center;
@@ -447,7 +446,7 @@ li{
     height: 70%;
     top: 10%;
     box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
-    visibility: visible;
+    visibility: hidden;
 }
 
 .frame-txt{
@@ -650,7 +649,7 @@ li{
 @media only screen and (max-width: 600px) {
     .picture{
         width: 87.5px;
-        height: 112.5px;
+        height: 140px;
     }
 
     .introduction-text{
@@ -676,7 +675,7 @@ li{
     /* WORD */
 
     .picture{
-        height: 140px;
+        height: 120px;
     }
 
     .introduction-text{
@@ -688,4 +687,28 @@ li{
     }
 
     /* PowerPoint */
+}
+
+@media only screen and (max-width: 412px) {
+    /* WORD */
+
+    .picture{
+        height: 120px;
+    }
+
+    .introduction-text{
+        font-size: 3.2vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* WORD */
+
+    .picture{
+        height: 120px;
+    }
+
+    .introduction-text{
+        font-size: 2.8vw;
+    }
 }
