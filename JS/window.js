@@ -16,6 +16,12 @@ let ppMinimize = document.querySelector(".icon-minimize.icon-pp");
 let ppSendTray = document.querySelector(".icon-sendTray.icon-pp");
 let ppTray = document.querySelector(".tray-pp");
 
+let txt = document.querySelector("#contact");
+let txtExit = document.querySelector(".icon-exit.icon-txt");
+let txtMinimize = document.querySelector(".icon-minimize.icon-txt");
+let txtSendTray = document.querySelector(".icon-sendTray.icon-txt");
+let txtTray = document.querySelector(".tray-txt");
+
 cmdExit.addEventListener("click", ()=> {
     alert("Ezt az ablakot nem zárhatod be!");
 });
@@ -101,6 +107,7 @@ wordTray.addEventListener("click", ()=>{
 ppExit.addEventListener("click", ()=> {
     pp.style.visibility = "hidden";
     ppTray.style.visibility = "hidden";
+    ppTray.style.display = "none";
 });
 
 ppMinimize.addEventListener("click", ()=> {
@@ -163,3 +170,43 @@ let ppitem4 = document.querySelector(".pp-item-4");
 ppitem4.addEventListener("click", ()=>{ Outline(ppitem4)});
 let ppitem5 = document.querySelector(".pp-item-5");
 ppitem5.addEventListener("click", ()=>{ Outline(ppitem5)});
+
+txtExit.addEventListener("click", ()=> {
+    txt.style.visibility = "hidden";
+    txtTray.style.visibility = "hidden";
+    txtTray.style.display = "none";
+});
+
+txtMinimize.addEventListener("click", ()=> {
+    if(txt.style.height == "95%")
+    {
+        txt.style.height = "70%";
+        txt.style.width = "40%";
+        txt.style.top = "10%";
+    }
+    else
+    {
+        txt.style.height = "95%";
+        txt.style.width = "100%";
+        txt.style.top = 0;
+        document.querySelector(".screen-txt").style.border = "0px";
+    }  
+});
+
+txtSendTray.addEventListener("click", ()=>{
+    txt.style.visibility = "hidden";
+    document.querySelector(".tray-txt").style.backgroundColor = "rgb(58, 58, 51)";
+});
+
+txtTray.addEventListener("click", ()=>{
+    if(txt.style.visibility == "visible")
+    {
+        txt.style.visibility = "hidden";
+        document.querySelector(".tray-txt").style.backgroundColor = "rgb(58, 58, 51)";
+    }
+    else
+    {
+        txt.style.visibility = "visible";
+        document.querySelector(".tray-txt").style.backgroundColor = "rgb(175, 171, 171)";
+    }
+});

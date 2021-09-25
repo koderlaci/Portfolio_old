@@ -135,7 +135,7 @@ function ListSelect(){
 
     document.querySelectorAll("li")[3].addEventListener("click", ()=> {
         document.getElementById("contact").style.visibility = "visible";
-        //document.querySelector(".tray-txt").style.visibility = "visible";
-        //document.querySelector(".tray-txt").style.display = "block";
+        document.querySelector(".tray-txt").style.visibility = "visible";
+        document.querySelector(".tray-txt").style.display = "block";
     });
 }

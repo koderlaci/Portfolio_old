@@ -84,14 +84,6 @@
     font-size: 1vw;
 }
 
-.icons-cmd{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 15%;
-}
-
 #screen{
     background-color: rgb(13, 17, 13);
     width: 100%;
@@ -208,8 +200,7 @@ li{
     width: 10%;
 }
 
-.icon-save{
-    background-image: url("../Pictures/icon-save.png");
+.icon-controll{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
@@ -217,13 +208,12 @@ li{
     width: 100%;
 }
 
-.icon-redo{
+.icon-controll.icon-save{
+    background-image: url("../Pictures/icon-save.png");
+}
+
+.icon-controll.icon-redo{
     background-image: url("../Pictures/icon-redo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-    height: 100%;
-    width: 100%;
 }
 
 .icon-save:hover{
@@ -237,24 +227,7 @@ li{
     justify-content: space-between;
     height: 100%;
     width: 10%;
-}
-
-.icon-save{
-    background-image: url("../Pictures/icon-save.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-    height: 100%;
-    width: 100%;
-}
-
-.icon-redo{
-    background-image: url("../Pictures/icon-redo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30%;
-    height: 100%;
-    width: 100%;
+    flex-basis: 8vw;
 }
 
 .icon-save:hover{
@@ -330,6 +303,10 @@ li{
 
 .tray-pp{
     background-image: url("../Pictures/tray-pp.png");
+}
+
+.tray-txt{
+    background-image: url("../Pictures/tray-notepad.png");
 }
 
 #experiences{
@@ -459,7 +436,7 @@ li{
 .frame-txt{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     top: 0;
     width: 100%;
@@ -489,4 +466,35 @@ li{
     font-family: 'Consolas';
     margin: 1%;
     font-size: 1vw;
+}
+
+.icons-2.icons-txt{
+    height: 100%;
+    width: 20%;
+}
+
+.icon-sendTray.icon-txt{
+    background-image: url("../Pictures/icon-sendTray-txt.png");
+}
+
+.icon-minimize.icon-txt{
+    background-image: url("../Pictures/icon-minimize-txt.png");
+}
+
+.icon-exit.icon-txt{
+    background-image: url("../Pictures/icon-exit-txt.png");
+}
+
+.icon-notepad{
+    background-image: url("../Pictures/tray-notepad.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    height: 100%;
+    width: 50%;
+    flex-basis: 2vw;
+}
+
+.txtName{
+    width: 90%;
 }
