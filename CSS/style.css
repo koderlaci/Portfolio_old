@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* modostiva */
+    overflow: auto;
 }
 
 #monitor{
@@ -101,6 +103,7 @@
     left: 5%;
     top: 10%;
     height: 10%;
+    overflow: visible;
 }
 
 #email{
@@ -140,7 +143,7 @@ li{
     height: 80%;
     top: 10%;
     box-shadow: -1px 0 rgb(77, 73, 73), 0 1px rgb(77, 73, 73), 1px 0 rgb(77, 73, 73), 0 -1px rgb(77, 73, 73);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .frame-word{
@@ -180,7 +183,7 @@ li{
     width: 70%;
     margin-top: 1%;
     border: 1px solid rgb(179, 169, 169);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .introduction-text{
@@ -196,11 +199,11 @@ li{
 .picture{
     background-image: url("../Pictures/myself.jpg");
     background-size: cover;
-    width: 175px;
-    height: 225px;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 250px;
     margin: 2%;
     margin-right: 0;
-    background-color: rgb(72, 146, 139);
     float: right;
 }
 
@@ -240,6 +243,7 @@ li{
     height: 100%;
     width: 10%;
     flex-basis: 8vw;
+    overflow: hidden;
 }
 
 .icon-save:hover{
@@ -256,7 +260,7 @@ li{
     position: fixed;
     bottom: 0;
 }
-/*kifli*/
+
 .tray-icons{
     background-position: center;
     background-repeat: no-repeat;
@@ -391,10 +395,11 @@ li{
     width: 90%;
     margin: 2%;
     margin-right: 7%;
-    border: 1px solid rgb(179, 169, 169);
+    /*border: 1px solid rgb(179, 169, 169);*/
     background-image: url("../Pictures/pp-item pp-item-1.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .pp-item{
@@ -464,6 +469,7 @@ li{
     background-color: rgb(228, 220, 220);
     width: 100%;
     height: 100%;
+    overflow: scroll;
 }
 
 .box-text-txt{
@@ -509,6 +515,27 @@ li{
 
 .txtName{
     width: 90%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .picture{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .picture{
+        height: 150px;
+    }
+    .introduction-text{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .picture{
+        height: 125px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -578,12 +605,11 @@ li{
     }
 
     .picture{
-        width: 87.5px;
-        height: 112.5px;
+        height: 125px;
     }
-  }
+}
 
-  @media only screen and (max-width: 426px) {
+@media only screen and (max-width: 600px) {
     .picture{
         width: 87.5px;
         height: 112.5px;
@@ -591,4 +617,4 @@ li{
     .introduction-text{
         font-size: 2vw;
     }
-  }
+}
