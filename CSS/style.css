@@ -447,7 +447,7 @@ li{
     height: 70%;
     top: 10%;
     box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .frame-txt{
@@ -652,7 +652,40 @@ li{
         width: 87.5px;
         height: 112.5px;
     }
+
     .introduction-text{
-        font-size: 2vw;
+        font-size: 3vw;
     }
+}
+
+@media only screen and (max-width: 426px) {
+
+    /* CMD */
+    #text{
+        font-size: 8vw;
+    }
+
+    .cmdName{
+        font-size: 4vw;
+    }
+
+    #email{
+        font-size: 6vw;
+    }
+
+    /* WORD */
+
+    .picture{
+        height: 140px;
+    }
+
+    .introduction-text{
+        font-size: 3.5vw;
+    }
+
+    .document-name{
+        font-size: 4vw;
+    }
+
+    /* PowerPoint */
 }
