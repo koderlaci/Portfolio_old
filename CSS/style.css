@@ -143,7 +143,7 @@ li{
     height: 80%;
     top: 10%;
     box-shadow: -1px 0 rgb(77, 73, 73), 0 1px rgb(77, 73, 73), 1px 0 rgb(77, 73, 73), 0 -1px rgb(77, 73, 73);
-    visibility: visible;
+    visibility: hidden;
 }
 
 .frame-word{
@@ -447,7 +447,7 @@ li{
     height: 70%;
     top: 10%;
     box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .frame-txt{
@@ -551,7 +551,7 @@ li{
     }
 
     #text{
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     #frame-cmd{
@@ -597,15 +597,53 @@ li{
     }
 
     .document-name{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .introduction-text{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .picture{
         height: 125px;
+    }
+
+    /* PowerPoint */
+
+    #experiences{
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .frame-pp{
+        justify-content: center;
+    }
+
+    /* TXT */
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    .frame-txt{
+        justify-content: center;
+    }
+
+    .txtName{
+        width: auto;
+    }
+
+    .icon-notepad{
+        flex-basis: 5vw;
+    }
+
+    .contact-text{
+        font-size: 4vw;
     }
 }
 
