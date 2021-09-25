@@ -518,7 +518,7 @@ li{
     /* CMD */
     #cmd{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         left: 0;
         top: 0;
     }
@@ -556,7 +556,7 @@ li{
     /* WORD */
     #introduction{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         left: 0;
         top: 0;
     }
