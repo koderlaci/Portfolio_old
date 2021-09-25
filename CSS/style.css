@@ -510,3 +510,85 @@ li{
 .txtName{
     width: 90%;
 }
+
+@media only screen and (max-width: 768px) {
+    #tray {
+      display: none;
+    }
+    /* CMD */
+    #cmd{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    #text{
+        font-size: 7vw;
+    }
+
+    #frame-cmd{
+        justify-content: center;
+    }
+
+    .cmdName{
+        font-size: 2vw;
+    }
+
+    #email{
+        font-size: 5vw;
+    }
+
+    .icon-sendTray{
+        display: none;
+    }
+
+    .icon-minimize{
+        display: none;
+    }
+
+    .icon-exit{
+        position: absolute;
+        right: 0;
+        width: 10vw;
+    }
+
+    /* WORD */
+    #introduction{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .frame-word{
+        justify-content: center;
+    }
+
+    .icons-1{
+        display: none;
+    }
+
+    .document-name{
+        font-size: 3vw;
+    }
+
+    .introduction-text{
+        font-size: 2vw;
+    }
+
+    .picture{
+        width: 87.5px;
+        height: 112.5px;
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
+    .picture{
+        width: 87.5px;
+        height: 112.5px;
+    }
+    .introduction-text{
+        font-size: 2vw;
+    }
+  }
