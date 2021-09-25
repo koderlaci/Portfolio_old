@@ -190,6 +190,18 @@ li{
     margin-left: 2%;
     margin-right: 2%;
     font-size: 1vw;
+    width: 90%;
+}
+
+.picture{
+    background-image: url("../Pictures/myself.jpg");
+    background-size: cover;
+    width: 175px;
+    height: 225px;
+    margin: 2%;
+    margin-right: 0;
+    background-color: rgb(72, 146, 139);
+    float: right;
 }
 
 .icons-1{
