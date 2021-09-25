@@ -430,7 +430,7 @@ li{
     height: 70%;
     top: 10%;
     box-shadow: -0.5px 0 rgb(77, 73, 73), 0 0.5px rgb(77, 73, 73), 0.5px 0 rgb(77, 73, 73), 0 -0.5px rgb(77, 73, 73);
-    visibility: visible;
+    visibility: hidden;
 }
 
 .frame-txt{

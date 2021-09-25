@@ -28,26 +28,23 @@ function Hide(){
 }
 
 function TextLoader(){
-    if(!isNameWritten)
-    {
+    if(!isNameWritten){
         document.getElementById("text").innerHTML += loadingtextname[j];
     }
-    if(j == loadingtextname.length-1 && !isNameWritten)
-    {
+
+    if(j == loadingtextname.length-1 && !isNameWritten){
         document.getElementById("text").innerHTML += "<br>";
         j = 0;
         isNameWritten = true;
-        
     }
-    if(isNameWritten)
-    {
+
+    if(isNameWritten){
         document.getElementById("text").innerHTML += loadingtext[j];
     }
     
     j++;
 
-    if(j >= loadingtext.length)
-    {
+    if(j >= loadingtext.length){
         clearInterval(TextLoaderInterval);
         j = 0;
         Loading();
@@ -75,13 +72,11 @@ function InitMenu(){
 }
 
 function Loader(){
-    if(j < ListText.length)
-    {
+    if(j < ListText.length){
         document.getElementById("list").innerHTML += ListText[j];
         j++;
     }
-    else
-    {
+    else{
         clearInterval(MenuTextInterval);
         j = 0;
         InitMenu();
@@ -89,14 +84,13 @@ function Loader(){
 }
 
 function SetMenu(){
-    if(temp < k && k < Menus.length)
-    {
+    if(temp < k && k < Menus.length){
         listItem = document.createElement("li");
         document.getElementById("list").appendChild(listItem);
         temp++;
     }
-    if(j < Menus[k].length)
-    {
+    
+    if(j < Menus[k].length){
         if(k == 0 && j == 0)
         {
             document.getElementById("list").appendChild(listItem);
@@ -105,14 +99,14 @@ function SetMenu(){
         listItem.innerHTML += Menus[k][j];
         j++;
     }
-    if(j == Menus[k].length)
-    {
+
+    if(j == Menus[k].length){
         temp = k;
         k++;
         j = 0;
     }
-    if(k == Menus.length)
-    {
+
+    if(k == Menus.length){
         clearInterval(MenuLoaderInterval);
         j = 0;
         ListSelect();

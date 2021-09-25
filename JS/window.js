@@ -178,14 +178,12 @@ txtExit.addEventListener("click", ()=> {
 });
 
 txtMinimize.addEventListener("click", ()=> {
-    if(txt.style.height == "95%")
-    {
+    if(txt.style.height == "95%"){
         txt.style.height = "70%";
         txt.style.width = "40%";
         txt.style.top = "10%";
     }
-    else
-    {
+    else{
         txt.style.height = "95%";
         txt.style.width = "100%";
         txt.style.top = 0;
@@ -199,13 +197,11 @@ txtSendTray.addEventListener("click", ()=>{
 });
 
 txtTray.addEventListener("click", ()=>{
-    if(txt.style.visibility == "visible")
-    {
+    if(txt.style.visibility == "visible"){
         txt.style.visibility = "hidden";
         document.querySelector(".tray-txt").style.backgroundColor = "rgb(58, 58, 51)";
     }
-    else
-    {
+    else{
         txt.style.visibility = "visible";
         document.querySelector(".tray-txt").style.backgroundColor = "rgb(175, 171, 171)";
     }
