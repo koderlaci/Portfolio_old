@@ -22,6 +22,22 @@ let txtMinimize = document.querySelector(".icon-minimize.icon-txt");
 let txtSendTray = document.querySelector(".icon-sendTray.icon-txt");
 let txtTray = document.querySelector(".tray-txt");
 
+function Exit(){
+
+}
+
+function Minimize(){
+
+}
+
+function SendTray(){
+
+}
+
+function Tray(){
+    
+}
+
 cmdExit.addEventListener("click", ()=> {
     alert("Ezt az ablakot nem zárhatod be!");
 });

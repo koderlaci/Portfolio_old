@@ -114,22 +114,17 @@ function SetMenu(){
 }
 
 function ListSelect(){
-    document.querySelectorAll("li")[0].addEventListener("click", ()=> {
-        document.getElementById("introduction").style.visibility = "visible";
-        document.querySelector(".tray-word").style.visibility = "visible";
-        document.querySelector(".tray-word").style.display = "block";
-    });
 
-    document.querySelectorAll("li")[1].addEventListener("click", ()=> {
-        document.getElementById("experiences").style.visibility = "visible";
-        document.querySelector(".tray-pp").style.visibility = "visible";
-        document.querySelector(".tray-pp").style.display = "block";
-    });
+    Selector(0, "introduction", ".tray-word");
+    Selector(1, "experiences", ".tray-pp");
     document.querySelectorAll("li")[2].addEventListener("click", ()=> { window.open("https://github.com/koderlaci?tab=repositories", '_blank').focus();});
+    Selector(3, "contact", ".tray-txt");
+}
 
-    document.querySelectorAll("li")[3].addEventListener("click", ()=> {
-        document.getElementById("contact").style.visibility = "visible";
-        document.querySelector(".tray-txt").style.visibility = "visible";
-        document.querySelector(".tray-txt").style.display = "block";
+function Selector(index, idName, className){
+    document.querySelectorAll("li")[index].addEventListener("click", ()=> {
+        document.getElementById(idName).style.visibility = "visible";
+        document.querySelector(className).style.visibility = "visible";
+        document.querySelector(className).style.display = "block";
     });
 }
