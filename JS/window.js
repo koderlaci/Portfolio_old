@@ -3,6 +3,7 @@ let cmdExit = document.querySelector(".icon-exit.icon-cmd");
 let cmdMinimize = document.querySelector(".icon-minimize.icon-cmd");
 let cmdSendTray = document.querySelector(".icon-sendTray.icon-cmd");
 let cmdTray = document.querySelector(".tray-cmd");
+let square = document.querySelector("#square");
 
 let intro = document.querySelector("#introduction");
 let wordExit = document.querySelector(".icon-exit.icon-word");
@@ -22,48 +23,73 @@ let txtMinimize = document.querySelector(".icon-minimize.icon-txt");
 let txtSendTray = document.querySelector(".icon-sendTray.icon-txt");
 let txtTray = document.querySelector(".tray-txt");
 
-function Exit(){
-
+function Exit(elementExit, parentName, trayName){
+    elementExit.addEventListener("click", ()=> {
+        parentName.style.visibility = "hidden";
+        trayName.style.visibility = "hidden";
+        trayName.style.display = "none";
+    });
 }
 
-function Minimize(){
-
+function Minimize(elementMinimize, parentName, minHeight, minWidth, minTop, maxHeight, maxWidth){
+    elementMinimize.addEventListener("click", ()=> {
+        if(parentName.style.height == maxHeight){
+            parentName.style.height = minHeight;
+            parentName.style.width = minWidth;
+            parentName.style.top = minTop;
+            if(parentName == cmd) parentName.style.left = "5%";
+        }
+        else{
+            parentName.style.height = maxHeight;
+            parentName.style.width = maxWidth;
+            parentName.style.top = 0;
+            if(parentName == cmd) parentName.style.left = 0;
+        }  
+    });
 }
 
-function SendTray(){
-
+function SendTray(elementSendTray, parentName, trayName){
+    elementSendTray.addEventListener("click", ()=>{
+        parentName.style.visibility = "hidden";
+        trayName.style.backgroundColor = "rgb(58, 58, 51)";
+        if(parentName == cmd) square.innerHTML = "";
+    });
 }
 
-function Tray(){
-    
+function Tray(elementTray, parentName){
+    elementTray.addEventListener("click", ()=>{
+        if(parentName.style.visibility == "visible"){
+            parentName.style.visibility = "hidden";
+            elementTray.style.backgroundColor = "rgb(58, 58, 51)";
+        }
+        else{
+            parentName.style.visibility = "visible";
+            elementTray.style.backgroundColor = "rgb(175, 171, 171)";
+        }
+    });
 }
-
+/* WORD */
+Exit(wordExit, intro, wordTray);
+Minimize(wordMinimize, intro, "80%", "80%", "10%", "95%", "100%");
+SendTray(wordSendTray, intro, wordTray);
+Tray(wordTray, intro);
+/* PowerPoint */
+Exit(ppExit, pp, ppTray);
+Minimize(ppMinimize, pp, "80%", "80%", "10%", "95%", "100%");
+SendTray(ppSendTray, pp, ppTray);
+Tray(ppTray, pp);
+/* TXT */
+Exit(txtExit, txt, txtTray);
+Minimize(txtMinimize, txt, "70%", "40%", "10%", "95%", "100%");
+SendTray(txtSendTray, txt, txtTray);
+Tray(txtTray, txt);
+/* CMD */
 cmdExit.addEventListener("click", ()=> {
     alert("Ezt az ablakot nem zárhatod be!");
 });
 
-cmdMinimize.addEventListener("click", ()=> {
-    if(cmd.style.height == "100%")
-    {
-        cmd.style.left = "5%";
-        cmd.style.top = "5%";
-        cmd.style.height = "60%";
-        cmd.style.width = "50%";
-    }
-    else
-    {
-        cmd.style.left = 0;
-        cmd.style.top = 0;
-        cmd.style.height = "100%";
-        cmd.style.width = "100%";
-    }  
-});
-
-cmdSendTray.addEventListener("click", ()=>{
-    cmd.style.visibility = "hidden";
-    document.querySelector(".tray-cmd").style.backgroundColor = "rgb(58, 58, 51)";
-    document.querySelector("#square").innerHTML = "";
-});
+Minimize(cmdMinimize, cmd, "60%", "50%", "5%", "100%", "100%");
+SendTray(cmdSendTray, cmd, cmdTray);
 
 cmdTray.addEventListener("click", ()=>{
     if(cmd.style.visibility == "hidden")
@@ -80,91 +106,9 @@ cmdTray.addEventListener("click", ()=>{
     }
 });
 
-wordExit.addEventListener("click", ()=> {
-    intro.style.visibility = "hidden";
-    wordTray.style.visibility = "hidden";
-    wordTray.style.display = "none";
-});
-
-wordMinimize.addEventListener("click", ()=> {
-    if(intro.style.height == "95%")
-    {
-        intro.style.height = "80%";
-        intro.style.width = "80%";
-        intro.style.top = "10%";
-    }
-    else
-    {
-        intro.style.height = "95%";
-        intro.style.width = "100%";
-        intro.style.top = 0;
-        document.querySelector(".screen-word").style.border = "0px";
-    }  
-});
-
-wordSendTray.addEventListener("click", ()=>{
-    intro.style.visibility = "hidden";
-    document.querySelector(".tray-word").style.backgroundColor = "rgb(58, 58, 51)";
-});
-
-wordTray.addEventListener("click", ()=>{
-    if(intro.style.visibility == "visible")
-    {
-        intro.style.visibility = "hidden";
-        document.querySelector(".tray-word").style.backgroundColor = "rgb(58, 58, 51)";
-    }
-    else
-    {
-        intro.style.visibility = "visible";
-        document.querySelector(".tray-word").style.backgroundColor = "rgb(175, 171, 171)";
-    }
-});
-
-ppExit.addEventListener("click", ()=> {
-    pp.style.visibility = "hidden";
-    ppTray.style.visibility = "hidden";
-    ppTray.style.display = "none";
-});
-
-ppMinimize.addEventListener("click", ()=> {
-    if(pp.style.height == "95%")
-    {
-        pp.style.left = "10%";
-        pp.style.top = "10%";
-        pp.style.height = "80%";
-        pp.style.width = "80%";
-    }
-    else
-    {
-        pp.style.left = 0;
-        pp.style.top = 0;
-        pp.style.height = "95%";
-        pp.style.width = "100%";
-    }  
-});
-
-ppSendTray.addEventListener("click", ()=>{
-    pp.style.visibility = "hidden";
-    document.querySelector(".tray-pp").style.backgroundColor = "rgb(58, 58, 51)";
-});
-
-ppTray.addEventListener("click", ()=>{
-    if(pp.style.visibility == "visible")
-    {
-        pp.style.visibility = "hidden";
-        document.querySelector(".tray-pp").style.backgroundColor = "rgb(58, 58, 51)";
-    }
-    else
-    {
-        pp.style.visibility = "visible";
-        document.querySelector(".tray-pp").style.backgroundColor = "rgb(175, 171, 171)";
-    }
-});
-
 let tempElement = document.createElement("div");
 function Outline(element){
-    if(tempElement != element)
-    {
+    if(tempElement != element){
         tempElement.style.border = "1px solid rgb(179, 169, 169)";
     }
     tempElement = element;
@@ -186,39 +130,3 @@ let ppitem4 = document.querySelector(".pp-item-4");
 ppitem4.addEventListener("click", ()=>{ Outline(ppitem4)});
 let ppitem5 = document.querySelector(".pp-item-5");
 ppitem5.addEventListener("click", ()=>{ Outline(ppitem5)});
-
-txtExit.addEventListener("click", ()=> {
-    txt.style.visibility = "hidden";
-    txtTray.style.visibility = "hidden";
-    txtTray.style.display = "none";
-});
-
-txtMinimize.addEventListener("click", ()=> {
-    if(txt.style.height == "95%"){
-        txt.style.height = "70%";
-        txt.style.width = "40%";
-        txt.style.top = "10%";
-    }
-    else{
-        txt.style.height = "95%";
-        txt.style.width = "100%";
-        txt.style.top = 0;
-        document.querySelector(".screen-txt").style.border = "0px";
-    }  
-});
-
-txtSendTray.addEventListener("click", ()=>{
-    txt.style.visibility = "hidden";
-    document.querySelector(".tray-txt").style.backgroundColor = "rgb(58, 58, 51)";
-});
-
-txtTray.addEventListener("click", ()=>{
-    if(txt.style.visibility == "visible"){
-        txt.style.visibility = "hidden";
-        document.querySelector(".tray-txt").style.backgroundColor = "rgb(58, 58, 51)";
-    }
-    else{
-        txt.style.visibility = "visible";
-        document.querySelector(".tray-txt").style.backgroundColor = "rgb(175, 171, 171)";
-    }
-});
